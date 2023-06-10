@@ -12,7 +12,7 @@ https://rebrand.ly/Ott1234
 
 ## EPG ใช่ได้เฉพาะ IPTV OTT NAVIGATE
 
-https://wiesplay.realmetx.repl.co/epgId.xml
+https://raw.githubusercontent.com/Playidturl1/PLAYIDTV/master/thaiepg.xml
 
 https://wiesplay.realmetx.repl.co/trueid.xml
 
