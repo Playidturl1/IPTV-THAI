@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>STREAM MPD</title>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 
 <meta name="description" content="LIVE">
 <meta name="keywords" content="ชมถ่ายทอดสดกีฬาออนไลน์.">
 <meta name="author" content="PlayIDTV">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- for non-UI builds: -->
 <script src="https://ajax.googleapis.com/ajax/libs/shaka-player/3.2.0/shaka-player.compiled.js"></script>
 <!-- or, for UI builds: -->
@@ -16,17 +16,17 @@
 </head>
 <body>
 <center>   <div data-shaka-player-container style="max-width:100%"
-         data-shaka-player-cast-receiver-id="111">
-       <!-- The data-shaka-player tag will make the UI library use this video element.
-            If no video is provided, the UI will automatically make one inside the container div. -->
-         <video autoplay data-shaka-player id="video"
-      poster="https://i.postimg.cc/dtjCX2S6/Polish-20231104-031215569.jpg" style="width:100%;height:100%"></video>
+		 data-shaka-player-cast-receiver-id="111">
+	   <!-- The data-shaka-player tag will make the UI library use this video element.
+			If no video is provided, the UI will automatically make one inside the container div. -->
+		 <video autoplay data-shaka-player id="video"
+	  poster="https://i.postimg.cc/dtjCX2S6/Polish-20231104-031215569.jpg" style="width:100%;height:100%"></video>
 
-    </div></center>
+	</div></center>
 <script>
 
 const manifestUri =
-    'https://49-231-37-37-rewriter.ais-vidnt.com/ais/play/origin/live/eds/V0117/DASH/V0117.mpd';
+	'https://49-231-37-37-rewriter.ais-vidnt.com/ais/play/origin/live/eds/V0117/DASH/V0117.mpd';
 
 async function init() {
   // When using the UI, the player is made automatically by the UI object.
@@ -37,10 +37,10 @@ async function init() {
 
 player.configure({
   drm: {
-    clearKeys: {
-      // 'key-id-in-hex': 'key-in-hex',
-      '97c1c27765dae9b95ee04ea6e8f50c34': '7db57b354d4d9cdb22e256c2a7500956'
-    }
+	clearKeys: {
+	  // 'key-id-in-hex': 'key-in-hex',
+	  '97c1c27765dae9b95ee04ea6e8f50c34': '7db57b354d4d9cdb22e256c2a7500956'
+	}
   }
 });
 
@@ -55,11 +55,11 @@ player.configure({
   // Try to load a manifest.
   // This is an asynchronous process.
   try {
-    await player.load(manifestUri);
-    // This runs if the asynchronous load is successful.
-    console.log('The video has now been loaded!');
+	await player.load(manifestUri);
+	// This runs if the asynchronous load is successful.
+	console.log('The video has now been loaded!');
   } catch (error) {
-    onPlayerError(error);
+	onPlayerError(error);
   }
 }
 
@@ -91,5 +91,8 @@ document.addEventListener('shaka-ui-loaded', init);
 document.addEventListener('shaka-ui-load-failed', initFailed);
    </script>
 </body>
+    <span style='position:absolute;top:10px;right:10px;font-size: 09px; font-weight: bold;color: #ff0;'><em>PLAYIDTV</em></span>
+   <center>
+  <p>ขอบคุณทุกท่านที่ติดตาม<ins>PLAYIDTV</ins> (พัฒนาต่อไปครับ)</p>
+   </center>
 </html>
- 

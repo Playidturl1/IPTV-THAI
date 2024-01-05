@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>STREAM CINEMAX</title>
+<title>STREAM MPD</title>
 	<meta charset="utf-8">
 
 <meta name="description" content="LIVE">
@@ -20,13 +20,13 @@
 	   <!-- The data-shaka-player tag will make the UI library use this video element.
 			If no video is provided, the UI will automatically make one inside the container div. -->
 		 <video autoplay data-shaka-player id="video"
-	  poster="https://i.postimg.cc/dtjCX2S6/Polish-20231104-031215569.jpg" style="width:100%;height:100%"></video>
+	  poster="" style="width:100%;height:100%"></video>
 
 	</div></center>
 <script>
 
 const manifestUri =
-	'https://49-231-37-37-rewriter.ais-vidnt.com/ais/play/origin/live/eds/V0118/DASH/V0118.mpd';
+	'https://ubn-streamer1.cdn.3bbtv.com:8443/3bb/live/109/109.mpd';
 
 async function init() {
   // When using the UI, the player is made automatically by the UI object.
@@ -39,7 +39,7 @@ player.configure({
   drm: {
 	clearKeys: {
 	  // 'key-id-in-hex': 'key-in-hex',
-	  'b541612bcb4598f60c4efc1733b5d8c9': '7e6d2819c0912a204fd5478f8a60d1b5'
+	  '072eeb02f6744f838fcc8f0ef36b312e': 'b797c12f2dd64728aae23fd3c8ef275c'
 	}
   }
 });
@@ -91,11 +91,8 @@ document.addEventListener('shaka-ui-loaded', init);
 document.addEventListener('shaka-ui-load-failed', initFailed);
    </script>
 </body>
-  <span style='position:absolute;top:10px;right:10px;font-size: 09px; font-weight: bold;color: #ff0;'><em>PLAYIDTV</em></span>
-  
-
-</body>
-  <center>
+    <span style='position:absolute;top:10px;right:10px;font-size: 08px; font-weight: bold;color: #ff0;'><em>PLAYIDTV</em></span>
+   <center>
   <p>ขอบคุณทุกท่านที่ติดตาม<ins>PLAYIDTV</ins> (พัฒนาต่อไปครับ)</p>
-  </center>
+   </center>
 </html>
