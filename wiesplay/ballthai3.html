@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html dir='ltr' lang='th'>
+<head>
+<meta charset='UTF-8'/>   
+<meta content='article' property='og:type'/>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<head>
+
+<title> Livesod</title>
+<meta name="robots" content="noindex" />
+<link rel="stylesheet" type="text/css" href="/clap.css">
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+<style> 
+
+  .player-poster[data-poster] {
+    background-size: cover;
+  }
+  body{
+    margin:0;
+    padding:0;
+  }
+
+  </style>
+</head>
+<div id="player"></div>
+<script>
+  var player = new Clappr.Player({
+          source: 'https://49-231-37-37-rewriter.ais-vidnt.com/ais/play/origin/live/eds/TL003/DASH/TL003.mpd',
+          mimeType: 'application/dash+xml',
+          height: '100%',
+          width: '100%',
+          autoPlay: true,
+          plugins: [LevelSelector, DashShakaPlayback, Clappr.MediaControl],
+          events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
+          chromecast: {
+              appId: '9DFB77C0',
+              contentType: 'video/mp4',
+          },
+          shakaConfiguration: {
+              drm: {
+              clearKeys: {
+                                        'b541612bcb4598f60c4efc1733b5d8c9':'7e6d2819c0912a204fd5478f8a60d1b5'		
+                  }
+              },
+          },
+          shakaOnBeforeLoad: function (shaka_player) {},
+          parentId: '#player'
+      });
+  </script>

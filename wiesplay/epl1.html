@@ -1,0 +1,139 @@
+<html><head>
+<title>WP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">	
+<style>	
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #ffff;
+}
+
+html {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: #000;
+}
+
+#load {
+  display: flex;
+  .flex-center{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;    
+}
+
+#bezel {
+  width: 1280px;
+  height: 720px;
+  background: #000000 ;
+  border-radius: 15px 15px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#camera {
+  width: 5px;
+  height: 5px;
+  background: #939498;
+  border-radius: 100%;
+  align-self: center;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+#screen {
+  width: 95%;
+  height: 90%;
+  background: #141414;
+  margin: 0 auto;
+  border-radius: 2.5px;
+  oveflow-x: hidden;
+}
+
+#bottom {
+  width: 590px;
+  height: 15px;
+  background: #d1d2d4;
+  border-radius: 2.5px 2.5px 0 0;
+}
+
+#indent {
+  width: 84px;
+  height: 8px;
+  background: #0000;
+  border-radius: 0 0 5px 5px;
+  margin: 0 auto;
+}
+
+#lower {
+  width:590px;
+  height: 7.5px;
+  background: #000;
+  border-radius: 0 0 70% 70%;
+}
+
+#frame {
+        -ms-zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.75);
+        -webkit-transform-origin: 0 0;
+    }	
+</style>	
+</head>
+ <script type="text/javascript">
+    $(document).ready(function(){
+        $("#test a").click(function( e ){
+            e.preventDefault();
+            var href = $( this ).attr('href');
+            $("#content").load( href , function(){
+            $('#content').hide().fadeIn(500);
+            });
+        });
+    });
+    </script>
+<body style="text-align:center;">
+    <div id=loading>LOADING...</div>
+                <script>
+                        setTimeout(function() {
+                                swal({
+                                        title: "PLAYER_WIESPLAY",
+                                        text: "",
+                                        type: ""
+                                }, function() {
+                                        window.location = "intent://streaming.livescorethai.net/iptv/epl-1.stream/playlist.m3u8#Intent;package=com.wiseplay;S.referer=https://streaming.livescorethai.net/&userAgent=exo_player;S.title=Sports;scheme=https;type=video/mp4;end";
+                                });
+                        }, 1000);
+                    </script>				
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
