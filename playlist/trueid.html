@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>TRUE SPORTS </title>
+<meta name="viewport" content="width=device-width">
+<!-- for non-UI builds: -->
+<script src="https://ajax.googleapis.com/ajax/libs/shaka-player/3.2.0/shaka-player.compiled.js"></script>
+<!-- or, for UI builds: -->
+<script src="https://ajax.googleapis.com/ajax/libs/shaka-player/3.2.0/shaka-player.ui.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/shaka-player/3.2.0/controls.css">
+</head>
+<body>
+<center>   <div data-shaka-player-container style="max-width:100%"
+         data-shaka-player-cast-receiver-id="000">
+       <!-- The data-shaka-player tag will make the UI library use this video element.
+            If no video is provided, the UI will automatically make one inside the container div. -->
+      <video autoplay data-shaka-player id="video" style="width:100%;height:100%"></video>
+    </div></center>
+<script>
+
+const manifestUri ='https://cdn734.stm.trueid.net/p101daidrm/he003_multi_w_auto_wv_tidapp.smil/manifest_w298142774_qYXBwaWQ9dHJ1ZWlkJnR5cGU9bGl2ZSZ2aXNpdG9yPXdlYiZkcm09d3YzJnVpZD0xNDA3MzIxMDUmZGlkPU9WTjJlRnBzY2tWMmNYUjRZblZKTm5JeVlYWXhaSEpHUVVwMFgwMDVOM1Umc2lkPTVmMTNmMTlkNTYmcnQ9MTcwNDM3NjgzNyZkcz04NjQwMCZ0az1yX0tUbi1ZUmh4Ml9XMmt4Q1MxdGZNd2FTZGJLa2VUb1lqYktSX0NPczJB.mpd';
+
+async function init() {
+  // When using the UI, the player is made automatically by the UI object.
+  const video = document.getElementById('video');
+  const ui = video['ui'];
+  const controls = ui.getControls();
+  const player = controls.getPlayer();
+
+player.configure({
+  drm: {
+    clearKeys: {
+      // 'key-id-in-hex': 'key-in-hex',
+      'e46b07f9049b58b99ffc24a6bc2d813b': '6cbd92a4efad354681576eb76c29b9bb'
+    }
+  }
+});
+
+  // Attach player and ui to the window to make it easy to access in the JS console.
+  window.player = player;
+  window.ui = ui;
+
+  // Listen for error events.
+  player.addEventListener('error', onPlayerErrorEvent);
+  controls.addEventListener('error', onUIErrorEvent);
+
+  // Try to load a manifest.
+  // This is an asynchronous process.
+  try {
+    await player.load(manifestUri);
+    // This runs if the asynchronous load is successful.
+    console.log('The video has now been loaded!');
+  } catch (error) {
+    onPlayerError(error);
+  }
+}
+
+function onPlayerErrorEvent(errorEvent) {
+  // Extract the shaka.util.Error object from the event.
+  onPlayerError(event.detail);
+}
+
+function onPlayerError(error) {
+  // Handle player error
+  console.error('Error code', error.code, 'object', error);
+}
+
+function onUIErrorEvent(errorEvent) {
+  // Extract the shaka.util.Error object from the event.
+  onPlayerError(event.detail);
+}
+
+function initFailed(errorEvent) {
+  // Handle the failure to load; errorEvent.detail.reasonCode has a
+  // shaka.ui.FailReasonCode describing why.
+  console.error('Unable to load the UI library!');
+}
+
+// Listen to the custom shaka-ui-loaded event, to wait until the UI is loaded.
+document.addEventListener('shaka-ui-loaded', init);
+// Listen to the custom shaka-ui-load-failed event, in case Shaka Player fails
+// to load (e.g. due to lack of browser support).
+document.addEventListener('shaka-ui-load-failed', initFailed);
+   </script>
+</body>
+      <span style='position:absolute;top:10px;right:10px;font-size: 07px; font-weight: bold;color: #ff0;'><em>PLAYIDTVLIVE</em></span>
+   <center>
+  <p>ขอบคุณทุกท่านที่ติดตาม<ins>PLAYIDTV</ins> (พัฒนาต่อไปครับ)</p>
+   </center>
+</html>
