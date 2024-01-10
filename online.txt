@@ -12,7 +12,7 @@ EXTM3U
  url-tvg="https://www.bevy.be/bevyfiles/thailand.xml, https://playidturl1.github.io/epgtv/gigatv.xml, https://playidturl1.github.io/epgtv/thailand.xml, "refresh="3600"
 "url="https://playidturl1.github.io/PLAYIDTV/",
 
-#EXTINF:-1 " tvg-name="" tvg-logo="https://cdn-icons-png.flaticon.com/512/5359/5359971.png" group-title="ข้อมูลอัพเดท", (23:34)(4/1/24)
+#EXTINF:-1 " tvg-name="" tvg-logo="https://cdn-icons-png.flaticon.com/512/5359/5359971.png" group-title="ข้อมูลอัพเดท", (12:34)(10/1/24)
 https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BQdq7_9MOklqngtkv/videoblocks-61dc77e29afa4f098010ed94_rwzecn-ak__7cb6c27a74e0204cc321dc71b4a076b0__P360.mp4
 #https://heylink.me/playidtv/
 
