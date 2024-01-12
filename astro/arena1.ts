@@ -1,0 +1,5 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10,
+https://ktpremium.com:443/Norsyaheer4356/Fantom4356/73606
