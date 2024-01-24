@@ -3,7 +3,7 @@
 ทีวีออนไลน์
 ห้ามนำไปขายเด็ดขาด การกระทำนี้มิได้มีวัตถุประสงค์เป็นการแสวงหาประโยชน์หรือสนับสนุนการกระทำผิดต่อกฎหมายใดทั้งสิ้น
 
-@2023
+@2024
 
 ## เพลย์ลิสต์ M3U ใช้งานกับแอพ #IPTV #OTT
 ## แอพที่สามารถใช้งาน M3U
@@ -12,9 +12,10 @@ https://rebrand.ly/Ott1234
 
 ## EPG ใช่ได้เฉพาะ IPTV OTT NAVIGATE
 
-https://raw.githubusercontent.com/Playidturl1/PLAYIDTV/master/thaiepg.xml
+https://playidtv.vercel.app/ais/guide.xml
+https://playidtv.vercel.app/ais/thailand.xml
 
-https://wiesplay.realmetx.repl.co/trueid.xml
+
 
 
 
