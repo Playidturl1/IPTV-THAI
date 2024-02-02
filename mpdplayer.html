@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>STREAM MPD</title>
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- for non-UI builds: -->
+  <script src="https://ajax.googleapis.com/ajax/libs/shaka-player/3.2.0/shaka-player.compiled.js"></script>
+  <!-- or, for UI builds: -->
+  <script src="https://ajax.googleapis.com/ajax/libs/shaka-player/3.2.0/shaka-player.ui.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/shaka-player/3.2.0/controls.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #video-container {
+      width: 100%;
+      max-width: 40em;
+      margin: 0 auto; /* Center the video player */
+      background-color: #000; /* Set the background color */
+    }
+    #video {
+      width: 100%;
+      height: auto;
+    }
+    .input-container {
+      margin-bottom: 10px;
+      padding: 0 20px; /* Add padding to the right and left sides */
+    }
+    .input-container label {
+      display: block;
+    }
+    .input-container input {
+      width: 100%;
+      padding: 5px;
+    }
+    .input-container button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+    #load-video-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-container" data-shaka-player-container data-shaka-player-cast-receiver-id="1BA79154">
+    <video data-shaka-player id="video"></video>
+  </div>
+
+  <div class="input-container">
+    <label for="manifestUrlInput">URL ที่แสดง:</label>
+    <input type="text" id="manifestUrlInput" placeholder="Enter manifest URL" required>
+    <button onclick="pasteManifestUrl()">วางลิงก์ MPD</button>
+  </div>
+  <div class="input-container">
+    <label for="clearKeyInput">Clear Key (kid:key):</label>
+    <input type="text" id="clearKeyInput" placeholder="Enter clear key (kid:key)" required>
+    <button onclick="pasteClearKey()">วาง รหัสคีย์</button>
+  </div>
+  <button id="load-video-button" onclick="init()">กดโหลดวิดีโอ</button>
+
+  <script>
+    function pasteManifestUrl() {
+      navigator.clipboard.readText().then((text) => {
+        document.getElementById('manifestUrlInput').value = text;
+      });
+    }
+
+    function pasteClearKey() {
+      navigator.clipboard.readText().then((text) => {
+        document.getElementById('clearKeyInput').value = text;
+      });
+    }
+
+    async function init() {
+      const manifestUri = document.getElementById('manifestUrlInput').value;
+      const clearKey = document.getElementById('clearKeyInput').value;
+
+      const [clearKeyId, clearKeyValue] = clearKey.split(':');
+
+      const video = document.getElementById('video');
+      const ui = video['ui'];
+      const controls = ui.getControls();
+      const player = controls.getPlayer();
+
+      player.configure({
+        drm: {
+          clearKeys: {
+            [clearKeyId]: clearKeyValue
+          }
+        }
+      });
+
+      window.player = player;
+      window.ui = ui;
+
+      player.addEventListener('error', onPlayerErrorEvent);
+
+      try {
+        await player.load(manifestUri);
+        console.log('The video has now been loaded!');
+      } catch (error) {
+        onPlayerError(error);
+      }
+    }
+
+    function onPlayerErrorEvent(errorEvent) {
+      onPlayerError(errorEvent.detail);
+    }
+
+    function onPlayerError(error) {
+      console.error('Error code', error.code, 'object', error);
+    }
+
+    document.addEventListener('shaka-ui-loaded', init);
+  </script>
+</body>
+</html>
