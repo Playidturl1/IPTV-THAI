@@ -188,7 +188,9 @@ https://rr3-ic3d-ndjcs.huaweicdncloud.com/dooball2you/digisport4/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://dooball2you.com/
 https://rr3-ic3d-ndjcs.huaweicdncloud.com/dooball2you/sportv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://ball365.co/wp-content/themes/ball365/image/icon_ch/epl1.png" group-title="LIVEBALLTV",True Premier HD 1
-https://r3-sn-5fo-c37ed7.googleuservideo.com/365liveball_m1 by V6/trueepl1_480p/chunks.m3u8
+https://r3-sn-5fo-c37ed7.googleuservideo.com/365liveball_m1/trueepl1_480p/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://ball365.co/wp-content/themes/ball365/image/icon_ch/epl1.png" group-title="LIVEBALLTV",True Premier HD 1 สำรอง
+https://809b09a9-7434-4cc5-9351-cf42d961eecc-00-sctpbc2chljp.pike.repl.co/tpf/tpf.m3u8
 #EXTVLCOPT:http-referrer=https://365liveball.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1
 #EXTINF:-1 tvg-logo="https://ball365.co/wp-content/themes/ball365/image/icon_ch/epl2.png" group-title="LIVEBALLTV",True Premier HD 2
