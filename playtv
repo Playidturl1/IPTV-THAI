@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto&display=swap"
+    rel="stylesheet">
+  <!-- flaticon ui -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <!-- CSS Interent -->
+  <link rel="stylesheet" href="https://blacktvreborn.my.id/movies/source/css/get.css">
+
+  <title> Series</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a id="judul-seriesclass" class="navbar-brand"
+        href=""><i class="fi fi-rs-angle-left"></i></a>
+    </div>
+  </nav>
+
+  <div id="container" class="container">
+    <div class="row">
+      <div id="judul-series" class="col">
+
+      </div>
+    </div>
+
+    <!-- <div class="row mt-4">
+          <div class="dropdown">
+            <button class="btn btn-small btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select Season
+            </button>
+            <div id="season-list" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              
+            </div>
+          </div>
+        </div> -->
+
+    <div id="episode-list" class="row mt-4">
+
+    </div>
+  <!-- End Hide NSLink -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://dl.dropbox.com/scl/fi/ntxgl43e0haqlfc06phui/get.js?rlkey=5ett8b28c2kpm21xsjfqoh2ax&dl=0"></script>
+</body>
+
+</html>
