@@ -1,1 +1,75 @@
-tv
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<script>
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval =  params.replace("sv=", "");
+  
+  return sval;
+}
+var sv = getParam("sv");
+
+</script>
+<meta name="referrer" content="no-referrer">
+<style>html,body{margin:0;padding:0;background:#C0C0C;}</style>
+<link href="https://dl.dropboxusercontent.com/s/ivl71n0cdfl9hfx/videojsvideo-js.min.css" rel="stylesheet">
+<script src="https://dl.dropboxusercontent.com/s/cdm25ae8b07w2fe/svideojsvideojs-ie8.min.js"></script>
+<script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+<script src="https://unpkg.com/videojs-contrib-hls/dist/videojscontrib-hls.js"></script>
+<body onload="init()">
+<script>
+
+
+	 if (navigator.userAgent.match(/Android/i) ||  navigator.userAgent.match(/webOS/i) ||	 navigator.userAgent.match(/iPhone/i) ||     navigator.userAgent.match(/iPod/i) ||          navigator.userAgent.match(/iPad/i) ||		 navigator.userAgent.match(/Mobile Safari/i) ||            navigator.userAgent.match(/Blackberry/i)){
+				document.write("\<video style=\"z-index:1;width:100%;height:320%background-color:#fff-o-object-fit:fill;object-fit:fill\"  controls=\"controls\" autoplay=\"true\" preload=\"auto\" height=\"auto\" src=\""+sv+"\"\>\<\/video\>");
+			 }else {
+				 
+				 document.write('<video id="streaming"   preload="auto" height="60%" width="60%" class="video-js" controls data-setup="{&quot;language&quot;: &quot;vi&quot;}"></video>');
+
+		function play(cid) {
+
+
+				src = cid;
+			player = videojs("streaming");
+			player.ready(function() {
+				player.src({
+					src: src,
+					type: "application/x-mpegURL",
+					autoplay: "false",
+				});
+			});
+
+			//player.play();
+
+		}
+
+		play(sv);
+			 }
+	</script>
+เขียนโดย PLAYIDTV PLAYER M3U8&MP4 ONLINE")
+<div id="videojs">
+</div>
+
+<style>
+	.video-js {
+		width: 100%;
+		height: 95%;
+	}
+	body {
+		text-align: center;
+		margin: 0px;
+	}
+	#videojs {
+		width: 60%;
+		height: 60%;
+	}.streaming-dimensions{
+				width: 60% !important;
+		height: 60% !important;
+	}
+</style>
+<script async src="https://drv.tw/inc/wd.js"></script></body>
+
