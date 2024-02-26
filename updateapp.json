@@ -1,6 +1,6 @@
 {
-    "versionCode": 352,
-    "versionName": "32",
+    "versionCode": 353,
+    "versionName": "33",
     "changelog": ["iptv-org as default playlist", "app in landscape mode", "ffmpeg libs", "optimize prebuffer", "change player layout", "and more.."],
     "downloadUrl": "https://raw.githubusercontent.com/Playidturl1/PLAYIDTV/master/Playidtvlife [Playidtv life].apk"
 }
