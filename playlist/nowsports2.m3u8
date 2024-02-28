@@ -1,0 +1,5 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10
+http://pal.alphatx.me:80/play/live.php?mac=00:1A:79:30:34:61&stream=1110616&extension=ts&play_token
