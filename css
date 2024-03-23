@@ -1,0 +1,255 @@
+#video_container1 .jw-controls-backdrop {
+    background: none;
+    }
+    
+    #video_container1  .jw-controlbar  {
+    display: none;
+    }
+    
+    #video_container1, #video_container2{
+        width: 100% !important;
+    }
+
+     
+    #video_container2 {margin: 0 auto;}
+    
+ 
+    /* .moviePlayer{background:0 0; width:500px;height:350px !improntat;} */
+    .moviePlayer .media-player{border-color:#131313!important;background:#202020;position:relative}
+    .moviePlayer .ad-player-link{position:absolute;/* left:0; */right: 12px;top: 22%;margin: -54px 0;/* padding: 10px; */}
+    .moviePlayer .ad-player-skip{position:absolute;right:0;top:0;margin:0 0}
+    .moviePlayer .btn-skip{cursor:pointer !important;display:block;border-top-right-radius:0;border-bottom-right-radius:0;color:#fff;background-color:#222;border-right:none;border-color:#151515;padding:20px 21px 18px;line-height:20px;font-size:20px;opacity:.9}
+    .moviePlayer .btn-skip-sm{padding:30px 31px 28px;line-height:30px;font-size:30px}
+    .moviePlayer .btn-ad-link{width:100%;height:100%;float:none;display:block;border-top-right-radius:0;border-bottom-right-radius:0;color:#fff;background-color: #ff5f11;/* border-right:none; */border: solid 1px;border-color: #a93700;font-size:16px;opacity:.9;}
+    .moviePlayer .player-embed{border:none;display:block;width:100%;display:none;}   
+
+    /* button{
+        min-width: 100px;
+        padding: 9px 10px;
+        margin-top: 5px;
+        margin-right: 2%;
+        margin-bottom: 1%;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: unset;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none !important;
+    }  */
+    
+    .moviePlayer .btn-ad-link{
+        text-decoration: none;
+        padding: 10% 0;
+        border-radius: 5px;
+    }
+    
+    .ad-player-skip{
+        width: 100%;
+        height: 100%;
+    }
+    .btn-skip{
+        position: absolute;
+        right: 0;
+        top: 35%;
+    }
+    .ad-player-link{
+        width: 115px;
+        height: 40px;
+    }
+    .ad-player-link a{
+        padding: 0!important;
+    }
+    .btn-ad-link{
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+    } 
+    .ad-overlay-click{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+      
+    body {
+        background-color: unset;
+    }
+
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: auto;
+    }
+    .bs3.bootstrap-select .dropdown-toggle .filter-option {
+        text-align: center;
+    }
+    .row-fluid{
+        width:100%;
+        float:left;
+    }
+
+    .video-wrap {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+        float:left;
+    }
+
+    .btn,
+    .btn:focus{
+        outline: none !important;
+    }
+    .btn-theme i {
+        margin: 0 5px !important;
+    }
+
+    
+    .bootstrap-select.btn-group .select-theme .dropdown-menu.inner {
+        position: static;
+        float: none;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .bootstrap-select.btn-group .select-theme .dropdown-menu {
+        min-width: 100%;
+        z-index: 1035;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff;
+        background-color: #f5f6f8;
+        padding: 0;
+    }
+    .bootstrap-select .dropdown-menu {
+        padding: 0;
+    }
+
+
+    
+button{
+    min-width: 110px;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;  
+    cursor: pointer;
+    padding: 8px;
+    color: #ffffff;
+}
+
+#group-url {
+    text-align: center;
+}
+#group-sound {
+    text-align: center;
+}
+
+.moviePlayer .ad-player-link{
+    margin: 0px 0px !important;
+ }
+
+
+ 
+@media only screen and (max-width:600px) {
+
+    .moviePlayer .btn-skip {
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+
+    #video_container1 {
+        height: 275px !important;
+    }
+     button{
+        min-width: 70px;
+        margin-top: 5px;
+        margin-right: 2px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .text-series{
+        font-size:12px;
+    }
+
+    #moviePlayer iframe {
+        height: 50vh !important;
+    }
+
+    .bootstrap-select > .dropdown-toggle,.bootstrap-select .dropdown-menu li a{
+        padding: 5px 10px !important;
+        min-width: 80 !important;
+        font-size: 11px !important;
+    }
+  }
+
+  @media only screen and (max-width:500px) {
+
+         .moviePlayer .btn-skip {
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+
+    #video_container1 {
+        height: 210px !important;
+    }
+
+    button{
+        min-width: 70px;
+        margin-top: 5px;
+        margin-right: 2px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .text-series{
+        font-size:12px;
+    }
+
+    #moviePlayer iframe {
+        height: 50vh !important;
+    }
+
+    .bootstrap-select > .dropdown-toggle,.bootstrap-select .dropdown-menu li a{
+        padding: 5px 10px !important;
+        min-width: 80 !important;
+        font-size: 11px !important;
+    }
+ }
+
+
+  @media only screen and (max-width:300px) {
+
+    .moviePlayer .btn-skip {
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+
+    #video_container1 {
+        height: 90px !important;
+    }
+
+    button{
+       margin-top: 1px;
+       font-size: 12px;
+       padding: 4px;
+   }
+   .text-series{
+    font-size:12px;
+}
+
+   .bootstrap-select > .dropdown-toggle,.bootstrap-select .dropdown-menu li a{
+    padding: 5px 10px !important;
+    min-width: 80 !important;
+    font-size: 11px !important; 
+
+}
+
+   #moviePlayer iframe {
+       height: 50vh !important;
+   }
+ }
