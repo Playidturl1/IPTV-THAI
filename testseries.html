@@ -1,0 +1,302 @@
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.9/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="https://playidtv.vercel.app/series.css">
+<style>body {color: #9E9E9E;}
+#video_container1{height: 445px !important;}
+.player-embed.dropdown{height: 455px !important;}
+.player-embed.list{height: 300px !important;}
+    
+#video_container1.list{height: 340px !important;}
+
+    button{
+        color: #fff;
+    background: #1f1f1f;
+    font-family: kanit;
+    font-size: 14px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    padding: 7px 20px;
+    border-radius: 10px;
+    }
+    
+#group-url {
+    float: left;
+    width: 50%;
+    text-align: left;
+margin-bottom: 10px;
+padding-left: 20px
+}
+    
+    #group-url .mov_source i{
+        color: #0cb7d5;
+        margin-right: 10px;
+    }
+    
+    #group-url .active i{
+        color: #fff!important;
+        margin-right: 10px;
+    }
+    
+button.active, button:hover {
+   color: #ffffff;
+    background: #d92017;
+}
+#group-sound {
+    margin-top: 0;
+    float: right;
+    width: 50%;
+    text-align: right;
+margin-bottom: 10px;
+padding-right: 10px;
+}
+
+    #group-sound.active {background: #0cb7d5!important;}
+
+    .btn.focus, .btn:focus, .btn:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+.dropdown-menu {
+border: none !important;
+    border-radius: 0 !important;
+}
+    .bootstrap-select .dropdown-menu li a {
+            padding: 10px 15px;
+    color: #fff;
+    text-align: center;
+    background-image: unset;
+    background-color: #1f1f1f;
+    outline: none;
+font-family: 'kanit';
+    font-weight: 300;
+text-transform: capitalize;
+    }
+.pull-left {
+margin-left: 20px;
+}
+.pull-right {
+   margin-right: 20px;
+}
+    .bootstrap-select .dropdown-menu li a:hover {
+        color: #fff;
+        background-image: unset !important;
+        background-color: #d92017 !important;
+    }
+    .bootstrap-select > .dropdown-toggle, .bootstrap-select > .dropdown-toggle:focus {
+        padding: 7px 20px;
+    height: auto;
+    color: #fff;
+    background: #d92017;
+    outline: none !important;
+    min-width: 110px;
+    box-shadow: none;
+    font-family: 'kanit' !important;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    }
+    .bootstrap-select .dropdown-menu li.active a {
+        padding: 7px 20px;
+        color: #fff;
+        background-image: unset !important;
+        background-color: #d92017 !important;
+text-transform: capitalize;
+    } 
+    .bootstrap-select .inner::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+    .bootstrap-select .inner::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #262626a3;
+    }
+    .bootstrap-select .inner::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #464646;
+    }
+
+
+
+
+.playlist-content {
+    width: 100%;
+    height: 100px;
+    padding-right: 14px;
+    float: right;
+}
+
+.playlist-ep {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    float: left;
+    flex: 1 1 auto;
+    height: 130px;
+    width: 50%;
+}
+
+.playlist-ep-header {
+    padding: 15px 15px 5px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.playlist-ep-body {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100px;
+    padding: 0 15px;
+}
+
+.select-ep {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-bottom: 1px dotted #ddd;
+}
+
+.select-ep:hover {
+    color: #0cb7d5;
+}
+
+
+.playlist-ss {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    float: left;
+    flex: 1 1 auto;
+    height: 130px;
+    width: 50%;
+}
+
+.playlist-ss-header {
+    padding: 15px 15px 5px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.playlist-ss-body {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100px;
+    padding: 0 15px;
+}
+
+.select-ss {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.select-ss:hover {
+    color: #0cb7d5;
+}
+
+.playlist-scroll::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+}
+
+.playlist-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #b3b3b380;
+}
+
+.playlist-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #63636300;
+}
+
+.select-active span {
+    color: #fff;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 600px) {
+button {
+    font-size: 24px !important;
+    letter-spacing: 0.5px !important;
+}
+ .bootstrap-select > .dropdown-toggle, .bootstrap-select > .dropdown-toggle:focus {
+    font-size: 24px !important;
+    letter-spacing: 0.5px !important;
+    }
+}
+</style><div id='group-url'></div><div id='group-sound'></div> 
+<!-- ตัวเล่นหนัง -->
+<div id="moviePlayer" class="moviePlayer">
+  <div id="video_container1" class="dropdown"></div>
+  <div id="video_container2" dropdown"></div>
+  <!-- <iframe src="" allowfullscreen="allowfullscreen" scrolling="no" frameBorder="0"  class="player-embed dropdown" ></iframe> -->
+  <div class='loading' style="background-color: rgb(38, 38, 38); position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 100000000; text-align: center; display: none;" id="loadingpage">
+    <h1 style="width:100%;text-align:center;font-size:200%;color:#fff;">...</h1>
+    <!-- <img src="https://i.imgur.com/sF6NGKq.gif" alt="loading" title="loading" style="width:50%;"> -->
+  </div>
+</div>
+
+
+
+<div class="pull-left">
+    <select class="selectpicker select-theme" id="series-season" data-style="form-control form-control-custom"></select>
+</div>
+
+<div class="pull-right">
+    <select class="selectpicker select-theme" id="series-episode" name="series-episode" data-style="form-control form-control-custom"></select>
+</div>
+
+
+<input type='hidden' id='season_id' value="">
+<input type='hidden' id='episode_id' value="">
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.9/js/bootstrap-select.min.js"></script>
+<!-- <script src="https://cdn.jwplayer.com/libraries/sL1IaYk4.js"></script> -->
+<script src="https://kit.fontawesome.com/37e3c13129.js" crossorigin="anonymous"></script>
+<script src="https://playidtv.vercel.app/jwplayer8.js"></script>
+
+<script>
+  jwplayer.key = "ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc=";
+  </script>
+
+
+<script type="text/JavaScript">
+let playlist = null;
+let playerConfig = {"domain_id":"56","btmovie_position":null,"btsound_position":null,"series_display":"dropdown","cover":"https:\/\/cdn.domovie247.com\/cover-vdo\/moviedee24.png","player":[]};
+let movieList = {"seasonName":{"ID1028":"season 1"},"seasonList":{"ID1028":{"name":"season 1","epName":{"EP10171":"Episode 1","EP10172":"Episode 2","EP10257":"Episode 3","EP10258":"Episode 4","EP10392":"Episode 5","EP10393":"Episode 6","EP10521":"Episode 7","EP10522":"Episode 8","EP10566":"Episode 9","EP10567":"Episode 10","EP10742":"Episode 11","EP10743":"Episode 12","EP10783":"Episode 13","EP10802":"Episode 14","EP11129":"Episode 15","EP11130":"Episode 16"},"epList":{"EP10171":{"name":"Episode 1","link":{"thai":[],"subthai":[{"MU_id":"10865","EP_id":"10171","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/zplays.xyz\/embed\/gq83sqwhnl","org_url":"https:\/\/zplays.xyz\/embed\/gq83sqwhnl"}],"sub":[]},"sound":["subthai"]},"EP10172":{"name":"Episode 2","link":{"thai":[],"subthai":[{"MU_id":"10866","EP_id":"10172","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/zplays.xyz\/embed\/xj1xu2earh","org_url":"https:\/\/zplays.xyz\/embed\/xj1xu2earh"}],"sub":[]},"sound":["subthai"]},"EP10257":{"name":"Episode 3","link":{"thai":[],"subthai":[{"MU_id":"10962","EP_id":"10257","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/39733ef9","org_url":"https:\/\/lb.start-mv.com\/embed\/39733ef9"}],"sub":[]},"sound":["subthai"]},"EP10258":{"name":"Episode 4","link":{"thai":[],"subthai":[{"MU_id":"10963","EP_id":"10258","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/834675c9","org_url":"https:\/\/lb.start-mv.com\/embed\/834675c9"}],"sub":[]},"sound":["subthai"]},"EP10392":{"name":"Episode 5","link":{"thai":[],"subthai":[{"MU_id":"11109","EP_id":"10392","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/44009853","org_url":"https:\/\/lb.start-mv.com\/embed\/44009853"}],"sub":[]},"sound":["subthai"]},"EP10393":{"name":"Episode 6","link":{"thai":[],"subthai":[{"MU_id":"11110","EP_id":"10393","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/903e52b8","org_url":"https:\/\/lb.start-mv.com\/embed\/903e52b8"}],"sub":[]},"sound":["subthai"]},"EP10521":{"name":"Episode 7","link":{"thai":[],"subthai":[{"MU_id":"11248","EP_id":"10521","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/adaa321e","org_url":"https:\/\/lb.start-mv.com\/embed\/adaa321e"}],"sub":[]},"sound":["subthai"]},"EP10522":{"name":"Episode 8","link":{"thai":[],"subthai":[{"MU_id":"11249","EP_id":"10522","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/c2ee6fe9","org_url":"https:\/\/lb.start-mv.com\/embed\/c2ee6fe9"}],"sub":[]},"sound":["subthai"]},"EP10566":{"name":"Episode 9","link":{"thai":[],"subthai":[{"MU_id":"11298","EP_id":"10566","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/e56f3c18","org_url":"https:\/\/lb.start-mv.com\/embed\/e56f3c18"}],"sub":[]},"sound":["subthai"]},"EP10567":{"name":"Episode 10","link":{"thai":[],"subthai":[{"MU_id":"11299","EP_id":"10567","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/f502aa73","org_url":"https:\/\/lb.start-mv.com\/embed\/f502aa73"}],"sub":[]},"sound":["subthai"]},"EP10742":{"name":"Episode 11","link":{"thai":[],"subthai":[{"MU_id":"11518","EP_id":"10742","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/ed6cc0ce","org_url":"https:\/\/lb.start-mv.com\/embed\/ed6cc0ce"}],"sub":[]},"sound":["subthai"]},"EP10743":{"name":"Episode 12","link":{"thai":[],"subthai":[{"MU_id":"11519","EP_id":"10743","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/9dc913e5","org_url":"https:\/\/lb.start-mv.com\/embed\/9dc913e5"}],"sub":[]},"sound":["subthai"]},"EP10783":{"name":"Episode 13","link":{"thai":[],"subthai":[{"MU_id":"11564","EP_id":"10783","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/02b9bbd9","org_url":"https:\/\/lb.start-mv.com\/embed\/02b9bbd9"}],"sub":[]},"sound":["subthai"]},"EP10802":{"name":"Episode 14","link":{"thai":[],"subthai":[{"MU_id":"11585","EP_id":"10802","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/7f2e7d9b","org_url":"https:\/\/lb.start-mv.com\/embed\/7f2e7d9b"}],"sub":[]},"sound":["subthai"]},"EP11129":{"name":"Episode 15","link":{"thai":[],"subthai":[{"MU_id":"11934","EP_id":"11129","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/a61ed645","org_url":"https:\/\/lb.start-mv.com\/embed\/a61ed645"}],"sub":[]},"sound":["subthai"]},"EP11130":{"name":"Episode 16","link":{"thai":[],"subthai":[{"MU_id":"11935","EP_id":"11130","MU_group":"1","MU_type":"embed","MU_ads":"true","MU_sound":"subthai","MU_url":"https:\/\/lb.start-mv.com\/embed\/d48a270c","org_url":"https:\/\/lb.start-mv.com\/embed\/d48a270c"}],"sub":[]},"sound":["subthai"]}}}}};
+let lads='';
+let seek='';
+
+const parenturl = (window.location != window.parent.location)
+            ? document.referrer
+            : document.location.href;
+
+</script>
+
+<script src="https://playidtv.vercel.app/devtools.js"></script>
+<script src="https://playidtv.vercel.app/script_series.js"></script>
+    
+   <center>
+  <p font-size: 18px;'ขอบคุณทุกท่านที่ติดตาม<ins>PLAYIDTV </ins> (ดูหนังซีรีย์ดูฟรี)</p>
+   </center>
+</html>
+
+
+
+
