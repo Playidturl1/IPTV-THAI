@@ -5,7 +5,11 @@
 
 @2024
 
-## เพลย์ลิสต์ M3U ใช้งานกับแอพ #IPTV #OTT :📺https://rebrand.ly/Ott1234
+## เพลย์ลิสต์ M3U ใช้งานกับแอพ #IPTV #OTT :📺
+#PlayidtvW3U :‎https://2nud.short.gy/app.php
+
+#M3U :https://rebrand.ly/Ott1234
+
 ## แอพที่สามารถใช้งาน M3U
 ## ข้อมูลเพิ่มเติม 🧑‍💻:https://www.socialcreator.com/playidtvinfo
 
